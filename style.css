@@ -1,0 +1,231 @@
+* {
+    /* border: 1px solid red; Change the values as per your requirement */
+}
+
+/* Media Query Syntax: Allows the rules of our css to apply to multiple screen sizes */
+
+/* Desktop View */
+@media (max-width: 1580px) {
+
+    body {
+        margin: 0;
+        /* background-color: lime; */
+    }
+   
+    
+  }
+  
+  /* End Of Desktop */
+  
+
+  /* Mid View - Ipad / Tablet */
+  @media (max-width: 980px) {
+   
+    body {
+        margin: 0;
+        /* background-color: coral; */
+
+    }
+
+  }
+  
+  /* End Of MidView */
+  
+  /* Mobile View */
+  @media (max-width: 580px) {
+    
+    body {
+        margin: 0;
+        /* background-color: red; */
+    }
+    
+      .navbar {
+          display: none;
+      }
+    
+      .logoContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Center the logo horizontally */
+    }
+
+    .logo {
+        margin: 0 auto; /* Center the logo vertically */
+    }
+    
+
+    
+    .shop { 
+        display: none; 
+    }
+
+  }
+  
+  /* End Of Mobile */
+  
+
+
+  /* General CSS */
+body {
+    margin: 0;
+}
+
+.navContainer {
+    position: absolute;
+    top: 10px; 
+    left: 0; 
+    width: 100%;   
+    z-index: 2;  /* Ensure navbar is above the video */
+    /* display: flex;  */
+    display: flex;
+    align-items: center; 
+  }
+   
+  .logoContainer {
+    width: 2%;  
+    margin-left: auto 
+  }
+
+  .logo {
+    height: 28px; 
+  }
+
+  
+.option {
+    color: white;
+    margin-right: 20px; /* Adjust the margin as needed */
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    position: relative; 
+    overflow: hidden; 
+}
+
+
+.menuIcon svg {
+    margin: 20px; /* Example - adjust the margin value as needed */
+}
+
+
+.shop { 
+    color: white; /* Set the text color to white */
+    font-family: Arial, sans-serif; /* Set the font family */
+    text-transform: uppercase; /* Make the text uppercase */
+    font-size: 13px;
+    font-weight: bold;
+    /* margin-right: 10px; */
+} 
+
+
+
+
+  .nav-list {
+    list-style: none; /* Remove default bullet points */
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;  
+    
+}
+  
+  .navbar {
+      /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent background */
+      color: white;
+      padding: 10px 200px;  /* first px refers to the top and bottom padding and the 2nd refers to the let and right*/
+      /* width: 800px; */
+  }
+  
+  
+
+  
+  
+
+  
+
+ 
+
+.nav-item a {
+    font-family: Montserrat, Arial, Verdana, sans-serif; /* Using Montserrat as the primary look */
+    text-transform: uppercase; /* Convert text to all capital letters */
+    color: white;
+    text-decoration: none; 
+    margin: 0 10px;
+    font-size: 13px;
+    line-height: 28px;
+    font-weight: bold;
+    position: relative; /* Ensure proper positioning for pseudo-element */
+    overflow: hidden; /* Hide overflow to prevent pseudo-element from overflowing */
+
+    /* width: 800px; */
+}
+
+.nav-item a:hover {
+    /* text-decoration: underline; */
+    color: white; 
+}
+
+.nav-item a::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px; /* Adjust the height of the line */
+    background-color: white;
+    transition: width 0.3s ease; /* Add transition for width */
+}
+
+.nav-item a:hover::before {
+    width: 100%; /* Expand the width to 100% on hover */
+}
+
+
+
+.nav-item {
+/* color: white; */
+/* text-transform: uppercase;  */
+
+    
+
+}
+
+  .topContainer { 
+      position: relative; /* Establish reference point for positioning */
+      /* ... rest of your video container styles */
+  }
+  
+.topContainer {
+    /* border: solid blue; */
+    border-width: 1px;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    /* display: flex */
+    
+}
+
+.topContainer video {
+    width: 100%;   
+    height: auto;   
+    object-fit: cover;  /* Cover the container while keeping aspect ratio */  }
+
+
+.midContainer {
+    /* border: solid purple; */
+    border-width: 1px;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    /* margin: 1em; */
+    /* display: flex;  */
+}
+
+.midContainer .midImage {
+    width: 100%;     /* Fill the container width */
+    height: auto;    /* Maintain aspect ratio */
+    object-fit: cover;  /* Cover the container while keeping aspect ratio */
+ }
+ 
+
+
